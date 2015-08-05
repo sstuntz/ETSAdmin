@@ -1,0 +1,1262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AE5C66A4-3E98-4866-A2B1-58092010AD53}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>My.MyApplication</StartupObject>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>CCNET</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CCNET.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CCNET.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CRVsPackageLib, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.TemplateEngine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Viewing.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.Compatibility">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CRVsPackageLib" />
+    <Import Include="CrystalDecisions" />
+    <Import Include="CrystalDecisions.CrystalReports" />
+    <Import Include="CrystalDecisions.CrystalReports.Design" />
+    <Import Include="CrystalDecisions.CrystalReports.Design.CodeGen" />
+    <Import Include="CrystalDecisions.CrystalReports.EMFServerMessageFactory" />
+    <Import Include="CrystalDecisions.CrystalReports.Engine" />
+    <Import Include="CrystalDecisions.CrystalReports.Engine.Migration" />
+    <Import Include="CrystalDecisions.CrystalReports.EPFPageObjectFactory" />
+    <Import Include="CrystalDecisions.CrystalReports.ETFTotallerTreeFactory" />
+    <Import Include="CrystalDecisions.CrystalReports.SCREventLog" />
+    <Import Include="CrystalDecisions.CrystalReports.TemplateEngine" />
+    <Import Include="CrystalDecisions.CrystalReports.TSLV" />
+    <Import Include="CrystalDecisions.CrystalReports.ViewerObjectModel" />
+    <Import Include="CrystalDecisions.Data" />
+    <Import Include="CrystalDecisions.Data.AdoDotNetInterop" />
+    <Import Include="CrystalDecisions.Enterprise" />
+    <Import Include="CrystalDecisions.Enterprise.Viewing" />
+    <Import Include="CrystalDecisions.ReportAppServer" />
+    <Import Include="CrystalDecisions.ReportSource" />
+    <Import Include="CrystalDecisions.Shared" />
+    <Import Include="CrystalDecisions.Shared.Interop" />
+    <Import Include="CrystalDecisions.Shared.Json" />
+    <Import Include="CrystalDecisions.Web" />
+    <Import Include="CrystalDecisions.Web.Design" />
+    <Import Include="CrystalDecisions.Web.HtmlReportRender" />
+    <Import Include="CrystalDecisions.Windows" />
+    <Import Include="CrystalDecisions.Windows.Forms" />
+    <Import Include="CrystalDecisions.Windows.Forms.Internal" />
+    <Import Include="CrystalDecisions.Windows.Forms.Internal.Win32" />
+    <Import Include="ETS" />
+    <Import Include="ETS.Common" />
+    <Import Include="Microsoft" />
+    <Import Include="Microsoft.CSharp" />
+    <Import Include="Microsoft.Office" />
+    <Import Include="Microsoft.Office.Core" />
+    <Import Include="Microsoft.SqlServer" />
+    <Import Include="Microsoft.SqlServer.Server" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.ApplicationServices" />
+    <Import Include="Microsoft.VisualBasic.Compatibility" />
+    <Import Include="Microsoft.VisualBasic.Compatibility.VB6" />
+    <Import Include="Microsoft.VisualBasic.CompilerServices" />
+    <Import Include="Microsoft.VisualBasic.Devices" />
+    <Import Include="Microsoft.VisualBasic.FileIO" />
+    <Import Include="Microsoft.VisualBasic.Logging" />
+    <Import Include="Microsoft.VisualBasic.MyServices" />
+    <Import Include="Microsoft.VisualBasic.MyServices.Internal" />
+    <Import Include="Microsoft.VisualBasic.PowerPacks" />
+    <Import Include="Microsoft.VisualBasic.PowerPacks.Printing" />
+    <Import Include="Microsoft.VisualBasic.PowerPacks.Printing.Compatibility" />
+    <Import Include="Microsoft.VisualBasic.PowerPacks.Printing.Compatibility.VB6" />
+    <Import Include="Microsoft.Win32" />
+    <Import Include="Microsoft.Win32.SafeHandles" />
+    <Import Include="My" />
+    <Import Include="My.Resources" />
+    <Import Include="PS" />
+    <Import Include="PS.Common" />
+    <Import Include="System" />
+    <Import Include="System.CodeDom" />
+    <Import Include="System.CodeDom.Compiler" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\Forms\Att\cc_base.Designer.vb">
+      <Link>CC\cc_base.Designer.vb</Link>
+      <DependentUpon>cc_base.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Att\cc_base.vb">
+      <Link>CC\cc_base.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\acctlookup.Designer.vb">
+      <Link>Basic\acctlookup.Designer.vb</Link>
+      <DependentUpon>acctlookup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\acctlookup.vb">
+      <Link>Basic\acctlookup.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\BlankMenuForm.Designer.vb">
+      <Link>Basic\BlankMenuForm.Designer.vb</Link>
+      <DependentUpon>BlankMenuForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\BlankMenuForm.vb">
+      <Link>Basic\BlankMenuForm.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\custrpt_lookup.Designer.vb">
+      <Link>Basic\custrpt_lookup.Designer.vb</Link>
+      <DependentUpon>custrpt_lookup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\custrpt_lookup.vb">
+      <Link>Basic\custrpt_lookup.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\Deptlkup.Designer.vb">
+      <Link>Basic\Deptlkup.Designer.vb</Link>
+      <DependentUpon>Deptlkup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\Deptlkup.vb">
+      <Link>Basic\Deptlkup.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\DirectDeposit.Designer.vb">
+      <Link>Basic\DirectDeposit.Designer.vb</Link>
+      <DependentUpon>DirectDeposit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\DirectDeposit.vb">
+      <Link>Basic\DirectDeposit.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\EtsMainMenu.Designer.vb">
+      <Link>Basic\EtsMainMenu.Designer.vb</Link>
+      <DependentUpon>EtsMainMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\EtsMainMenu.vb">
+      <Link>Basic\EtsMainMenu.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\frmcustrpt.Designer.vb">
+      <Link>Basic\frmcustrpt.Designer.vb</Link>
+      <DependentUpon>frmcustrpt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\frmcustrpt.vb">
+      <Link>Basic\frmcustrpt.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\frmgl_enter.Designer.vb">
+      <Link>Basic\frmgl_enter.Designer.vb</Link>
+      <DependentUpon>frmgl_enter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\frmgl_enter.vb">
+      <Link>Basic\frmgl_enter.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\frmnamec.Designer.vb">
+      <Link>Basic\frmnamec.Designer.vb</Link>
+      <DependentUpon>frmnamec.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\frmnamec.vb">
+      <Link>Basic\frmnamec.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\Frmpwd.Designer.vb">
+      <Link>Basic\Frmpwd.Designer.vb</Link>
+      <DependentUpon>Frmpwd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\Frmpwd.vb">
+      <Link>Basic\Frmpwd.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\frmsys.Designer.vb">
+      <Link>Basic\frmsys.Designer.vb</Link>
+      <DependentUpon>frmsys.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\frmsys.vb">
+      <Link>Basic\frmsys.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\frmtype.Designer.vb">
+      <Link>Basic\frmtype.Designer.vb</Link>
+      <DependentUpon>frmtype.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\frmtype.vb">
+      <Link>Basic\frmtype.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\Frm_mastmnu.Designer.vb">
+      <Link>Basic\Frm_mastmnu.Designer.vb</Link>
+      <DependentUpon>Frm_mastmnu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\Frm_mastmnu.vb">
+      <Link>Basic\Frm_mastmnu.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\Frm_mpda.Designer.vb">
+      <Link>Basic\Frm_mpda.Designer.vb</Link>
+      <DependentUpon>Frm_mpda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\Frm_mpda.vb">
+      <Link>Basic\Frm_mpda.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\frm_program.Designer.vb">
+      <Link>Basic\frm_program.Designer.vb</Link>
+      <DependentUpon>frm_program.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\frm_program.vb">
+      <Link>Basic\frm_program.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\gldept.Designer.vb">
+      <Link>Basic\gldept.Designer.vb</Link>
+      <DependentUpon>gldept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\gldept.vb">
+      <Link>Basic\gldept.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\Glheadlkup.Designer.vb">
+      <Link>Basic\Glheadlkup.Designer.vb</Link>
+      <DependentUpon>Glheadlkup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\Glheadlkup.vb">
+      <Link>Basic\Glheadlkup.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\Glhead_lookup.Designer.vb">
+      <Link>Basic\Glhead_lookup.Designer.vb</Link>
+      <DependentUpon>Glhead_lookup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\Glhead_lookup.vb">
+      <Link>Basic\Glhead_lookup.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\Nameaddr.Designer.vb">
+      <Link>Basic\Nameaddr.Designer.vb</Link>
+      <DependentUpon>Nameaddr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\Nameaddr.vb">
+      <Link>Basic\Nameaddr.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\Nam_bank.Designer.vb">
+      <Link>Basic\Nam_bank.Designer.vb</Link>
+      <DependentUpon>Nam_bank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\Nam_bank.vb">
+      <Link>Basic\Nam_bank.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\nam_cust.designer.vb">
+      <Link>Basic\nam_cust.designer.vb</Link>
+      <DependentUpon>nam_cust.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\nam_cust.vb">
+      <Link>Basic\nam_cust.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\NAM_VEND.Designer.vb">
+      <Link>Basic\NAM_VEND.Designer.vb</Link>
+      <DependentUpon>NAM_VEND.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\NAM_VEND.vb">
+      <Link>Basic\NAM_VEND.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\Pwd.Designer.vb">
+      <Link>Basic\Pwd.Designer.vb</Link>
+      <DependentUpon>Pwd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\Pwd.vb">
+      <Link>Basic\Pwd.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\Pwds.Designer.vb">
+      <Link>Basic\Pwds.Designer.vb</Link>
+      <DependentUpon>Pwds.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\Pwds.vb">
+      <Link>Basic\Pwds.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\Valid_YN.vb">
+      <Link>Basic\Valid_YN.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\WordForm.Designer.vb">
+      <Link>Basic\WordForm.Designer.vb</Link>
+      <DependentUpon>WordForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\Basic\WordForm.vb">
+      <Link>Basic\WordForm.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\ccckrecon.designer.vb">
+      <Link>CC\ccckrecon.designer.vb</Link>
+      <DependentUpon>ccckrecon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\ccckrecon.vb">
+      <Link>CC\ccckrecon.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\ccdeduct.Designer.vb">
+      <Link>CC\ccdeduct.Designer.vb</Link>
+      <DependentUpon>ccdeduct.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\ccdeduct.vb">
+      <Link>CC\ccdeduct.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\ccprsys.designer.vb">
+      <Link>CC\ccprsys.designer.vb</Link>
+      <DependentUpon>ccprsys.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\ccprsys.vb">
+      <Link>CC\ccprsys.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\ccpr_ed.designer.vb">
+      <Link>CC\ccpr_ed.designer.vb</Link>
+      <DependentUpon>ccpr_ed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\ccpr_ed.vb">
+      <Link>CC\ccpr_ed.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\ccreason.designer.vb">
+      <Link>CC\ccreason.designer.vb</Link>
+      <DependentUpon>ccreason.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\ccreason.vb">
+      <Link>CC\ccreason.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\cc_chkvoid.Designer.vb">
+      <Link>CC\cc_chkvoid.Designer.vb</Link>
+      <DependentUpon>cc_chkvoid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\cc_chkvoid.vb">
+      <Link>CC\cc_chkvoid.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\cc_ed_time.designer.vb">
+      <Link>CC\cc_ed_time.designer.vb</Link>
+      <DependentUpon>cc_ed_time.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\cc_ed_time.vb">
+      <Link>CC\cc_ed_time.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\cc_ent_time.designer.vb">
+      <Link>CC\cc_ent_time.designer.vb</Link>
+      <DependentUpon>cc_ent_time.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\cc_ent_time.vb">
+      <Link>CC\cc_ent_time.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\clijob.designer.vb">
+      <Link>CC\clijob.designer.vb</Link>
+      <DependentUpon>clijob.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\clijob.vb">
+      <Link>CC\clijob.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\clijoblkup.Designer.vb">
+      <Link>CC\clijoblkup.Designer.vb</Link>
+      <DependentUpon>clijoblkup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\clijoblkup.vb">
+      <Link>CC\clijoblkup.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\clpr_menu.designer.vb">
+      <Link>CC\clpr_menu.designer.vb</Link>
+      <DependentUpon>clpr_menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\clpr_menu.vb">
+      <Link>CC\clpr_menu.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\clpr_mod.vb">
+      <Link>ETSModules\clpr_mod.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\clpr_start.designer.vb">
+      <Link>CC\clpr_start.designer.vb</Link>
+      <DependentUpon>clpr_start.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\clpr_start.vb">
+      <Link>CC\clpr_start.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\Dedlkup.designer.vb">
+      <Link>CC\Dedlkup.designer.vb</Link>
+      <DependentUpon>Dedlkup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\Dedlkup.vb">
+      <Link>CC\Dedlkup.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\Deducts.designer.vb">
+      <Link>CC\Deducts.designer.vb</Link>
+      <DependentUpon>Deducts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\Deducts.vb">
+      <Link>CC\Deducts.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\disab.designer.vb">
+      <Link>CC\disab.designer.vb</Link>
+      <DependentUpon>disab.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\disab.vb">
+      <Link>CC\disab.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\disablkup.designer.vb">
+      <Link>CC\disablkup.designer.vb</Link>
+      <DependentUpon>disablkup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\disablkup.vb">
+      <Link>CC\disablkup.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\Import.Designer.vb">
+      <Link>CC\Import.Designer.vb</Link>
+      <DependentUpon>Import.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\Import.vb">
+      <Link>CC\Import.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\job.Designer.vb">
+      <Link>CC\job.Designer.vb</Link>
+      <DependentUpon>job.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\job.vb">
+      <Link>CC\job.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\joblkup.designer.vb">
+      <Link>CC\joblkup.designer.vb</Link>
+      <DependentUpon>joblkup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\joblkup.vb">
+      <Link>CC\joblkup.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\job_alloc.designer.vb">
+      <Link>CC\job_alloc.designer.vb</Link>
+      <DependentUpon>job_alloc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\job_alloc.vb">
+      <Link>CC\job_alloc.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\paycl.designer.vb">
+      <Link>CC\paycl.designer.vb</Link>
+      <DependentUpon>paycl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\paycl.vb">
+      <Link>CC\paycl.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\pclass.designer.vb">
+      <Link>CC\pclass.designer.vb</Link>
+      <DependentUpon>pclass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\pclass.vb">
+      <Link>CC\pclass.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\pclasslkup.designer.vb">
+      <Link>CC\pclasslkup.designer.vb</Link>
+      <DependentUpon>pclasslkup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\pclasslkup.vb">
+      <Link>CC\pclasslkup.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\prep_je_cc.Designer.vb">
+      <Link>CC\prep_je_cc.Designer.vb</Link>
+      <DependentUpon>prep_je_cc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\prep_je_cc.vb">
+      <Link>CC\prep_je_cc.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\Start_process.designer.vb">
+      <Link>CC\Start_process.designer.vb</Link>
+      <DependentUpon>Start_process.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\Start_process.vb">
+      <Link>CC\Start_process.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\update_recon.designer.vb">
+      <Link>CC\update_recon.designer.vb</Link>
+      <DependentUpon>update_recon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\update_recon.vb">
+      <Link>CC\update_recon.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\Vac_acc.designer.vb">
+      <Link>CC\Vac_acc.designer.vb</Link>
+      <DependentUpon>Vac_acc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\Vac_acc.vb">
+      <Link>CC\Vac_acc.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\AcctNums.vb">
+      <Link>DataObjects\AcctNums.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\ACHXferaccts.vb">
+      <Link>DataObjects\ACHXferaccts.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\AgencyData.vb">
+      <Link>DataObjects\AgencyData.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\APCheckData.vb">
+      <Link>DataObjects\APCheckData.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\ApplicationEvents.vb">
+      <Link>DataObjects\ApplicationEvents.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\AttendData.vb">
+      <Link>DataObjects\AttendData.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\AttendReportData.vb">
+      <Link>DataObjects\AttendReportData.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\AuthoData.vb">
+      <Link>DataObjects\AuthoData.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\Billable.vb">
+      <Link>DataObjects\Billable.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\BillableCLient.vb">
+      <Link>DataObjects\BillableCLient.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\BillableContract.vb">
+      <Link>DataObjects\BillableContract.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\BillControl.vb">
+      <Link>DataObjects\BillControl.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\BudgetData.vb">
+      <Link>DataObjects\BudgetData.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\CashReceipt.vb">
+      <Link>DataObjects\CashReceipt.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\CashReceiptHeader.vb">
+      <Link>DataObjects\CashReceiptHeader.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\ccckstub.vb">
+      <Link>DataObjects\ccckstub.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\CC\ccjob.vb">
+      <Link>DataObjects\ccjob.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\CC\ccrecon.vb">
+      <Link>DataObjects\ccrecon.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\CC\ccsys.vb">
+      <Link>DataObjects\ccsys.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\CC\cctime.vb">
+      <Link>DataObjects\cctime.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\CC\ccytd.vb">
+      <Link>DataObjects\ccytd.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\CC\cc_clijob.vb">
+      <Link>DataObjects\cc_clijob.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\CC\cc_deduct.vb">
+      <Link>DataObjects\cc_deduct.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\CC\cc_disab.vb">
+      <Link>DataObjects\cc_disab.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\CC\cc_paycl.vb">
+      <Link>DataObjects\cc_paycl.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\ClientBaseData.vb">
+      <Link>DataObjects\ClientBaseData.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\CompInv.vb">
+      <Link>DataObjects\CompInv.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\ContactData.vb">
+      <Link>DataObjects\ContactData.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\ContractData.vb">
+      <Link>DataObjects\ContractData.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\ETSData.vb">
+      <Link>DataObjects\ETSData.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\Fund.vb">
+      <Link>DataObjects\Fund.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\JeData.vb">
+      <Link>DataObjects\JeData.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\NameCCData.vb">
+      <Link>DataObjects\NameCCData.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\nam_bank.vb">
+      <Link>DataObjects\nam_bank.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\PaymentData.vb">
+      <Link>DataObjects\PaymentData.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\ProgramData.vb">
+      <Link>DataObjects\ProgramData.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\PVData.vb">
+      <Link>DataObjects\PVData.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\RefData.vb">
+      <Link>DataObjects\RefData.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\ReportTypeData.vb">
+      <Link>DataObjects\ReportTypeData.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\Vacation.vb">
+      <Link>DataObjects\Vacation.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\DataObjects\VoucherData.vb">
+      <Link>DataObjects\VoucherData.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\ETSModules\APMOD.vb">
+      <Link>ETSModules\APMOD.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\ETSModules\Database.vb">
+      <Link>ETSModules\Database.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\ETSModules\ETSCommon.vb">
+      <Link>ETSModules\ETSCommon.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\ETSModules\ETSSQL.vb">
+      <Link>ETSModules\ETSSQL.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\ETSModules\ETSSQLCC.vb">
+      <Link>ETSModules\ETSSQLCC.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\ETSModules\GLMod.vb">
+      <Link>ETSModules\GLMod.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\ETSModules\Module1.vb">
+      <Link>ETSModules\Module1.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\ETSModules\pr_common.vb">
+      <Link>ETSModules\pr_common.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\ETSModules\Stpr_mod.vb">
+      <Link>ETSModules\Stpr_mod.vb</Link>
+    </Compile>
+    <Compile Include="..\..\..\Forms\GL\frmglhead1.Designer.vb">
+      <Link>Basic\frmglhead1.Designer.vb</Link>
+      <DependentUpon>frmglhead1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\..\..\Forms\GL\frmglhead1.vb">
+      <Link>Basic\frmglhead1.vb</Link>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="ATT\ContractDataEntry.Designer.vb">
+      <DependentUpon>ContractDataEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ATT\ContractDataEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\CrystalForm.Designer.vb">
+      <DependentUpon>CrystalForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\CrystalForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basic\ETSSplashOpen.Designer.vb">
+      <DependentUpon>ETSSplashOpen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Basic\ETSSplashOpen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CC\frmccyear.Designer.vb">
+      <DependentUpon>frmccyear.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CC\frmccyear.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CC\frmavhr.Designer.vb">
+      <DependentUpon>frmavhr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CC\frmavhr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CC\ClientContract.Designer.vb">
+      <DependentUpon>ClientContract.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CC\ClientContract.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CC\contlkup.Designer.vb">
+      <DependentUpon>contlkup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CC\contlkup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CC\CreateCoachRel.Designer.vb">
+      <DependentUpon>CreateCoachRel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CC\CreateCoachRel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CC\Frmccvac.Designer.vb">
+      <DependentUpon>Frmccvac.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CC\Frmccvac.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CC\MthQtrYtd.Designer.vb">
+      <DependentUpon>MthQtrYtd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CC\MthQtrYtd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CC\PayService.Designer.vb">
+      <DependentUpon>PayService.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CC\PayService.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CC\frmrate.Designer.vb">
+      <DependentUpon>frmrate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CC\frmrate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CC\ReprintChecks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CC\NameCC.Designer.vb">
+      <DependentUpon>NameCC.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CC\NameCC.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CC\WebMaint.Designer.vb">
+      <DependentUpon>WebMaint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CC\WebMaint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataObjects\ConnectionData.vb" />
+    <Compile Include="DataObjects\cont.vb" />
+    <Compile Include="DataObjects\NameEEData.vb" />
+    <Compile Include="DataObjects\NameAddrData.vb" />
+    <Compile Include="EE\NameEE.Designer.vb">
+      <DependentUpon>NameEE.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EE\NameEE.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ETSModules\att_mod.vb" />
+    <Compile Include="ETSModules\ETSSQLEE.vb" />
+    <Compile Include="ETSModules\Med_mod.vb" />
+    <Compile Include="ETSModules\WebCalls.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\Forms\Att\cc_base.resX">
+      <Link>CC\cc_base.resX</Link>
+      <DependentUpon>cc_base.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\acctlookup.resX">
+      <Link>Basic\acctlookup.resX</Link>
+      <DependentUpon>acctlookup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\BlankMenuForm.resx">
+      <Link>Basic\BlankMenuForm.resx</Link>
+      <DependentUpon>BlankMenuForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\custrpt_lookup.resX">
+      <Link>Basic\custrpt_lookup.resX</Link>
+      <DependentUpon>custrpt_lookup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\Deptlkup.resX">
+      <Link>Basic\Deptlkup.resX</Link>
+      <DependentUpon>Deptlkup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\DirectDeposit.resX">
+      <Link>Basic\DirectDeposit.resX</Link>
+      <DependentUpon>DirectDeposit.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\EtsMainMenu.resX">
+      <Link>Basic\EtsMainMenu.resX</Link>
+      <DependentUpon>EtsMainMenu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\frmcustrpt.resX">
+      <Link>Basic\frmcustrpt.resX</Link>
+      <DependentUpon>frmcustrpt.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\frmgl_enter.resX">
+      <Link>Basic\frmgl_enter.resX</Link>
+      <DependentUpon>frmgl_enter.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\frmnamec.resX">
+      <Link>Basic\frmnamec.resX</Link>
+      <DependentUpon>frmnamec.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\Frmpwd.resX">
+      <Link>Basic\Frmpwd.resX</Link>
+      <DependentUpon>Frmpwd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\frmsys.resX">
+      <Link>Basic\frmsys.resX</Link>
+      <DependentUpon>frmsys.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\frmtype.resx">
+      <Link>Basic\frmtype.resx</Link>
+      <DependentUpon>frmtype.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\Frm_mastmnu.resX">
+      <Link>Basic\Frm_mastmnu.resX</Link>
+      <DependentUpon>Frm_mastmnu.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\Frm_mpda.resX">
+      <Link>Basic\Frm_mpda.resX</Link>
+      <DependentUpon>Frm_mpda.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\frm_program.resX">
+      <Link>Basic\frm_program.resX</Link>
+      <DependentUpon>frm_program.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\gldept.resX">
+      <Link>Basic\gldept.resX</Link>
+      <DependentUpon>gldept.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\Glheadlkup.resX">
+      <Link>Basic\Glheadlkup.resX</Link>
+      <DependentUpon>Glheadlkup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\Glhead_lookup.resX">
+      <Link>Basic\Glhead_lookup.resX</Link>
+      <DependentUpon>Glhead_lookup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\Nameaddr.resX">
+      <Link>Basic\Nameaddr.resX</Link>
+      <DependentUpon>Nameaddr.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\Nam_bank.resX">
+      <Link>Basic\Nam_bank.resX</Link>
+      <DependentUpon>Nam_bank.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\nam_cust.resX">
+      <Link>Basic\nam_cust.resX</Link>
+      <DependentUpon>nam_cust.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\NAM_VEND.resX">
+      <Link>Basic\NAM_VEND.resX</Link>
+      <DependentUpon>NAM_VEND.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\Pwd.resX">
+      <Link>Basic\Pwd.resX</Link>
+      <DependentUpon>Pwd.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\Pwds.resX">
+      <Link>Basic\Pwds.resX</Link>
+      <DependentUpon>Pwds.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\Basic\WordForm.resx">
+      <Link>Basic\WordForm.resx</Link>
+      <DependentUpon>WordForm.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\ccckrecon.resX">
+      <Link>CC\ccckrecon.resX</Link>
+      <DependentUpon>ccckrecon.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\ccdeduct.resX">
+      <Link>CC\ccdeduct.resX</Link>
+      <DependentUpon>ccdeduct.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\ccprsys.resX">
+      <Link>CC\ccprsys.resX</Link>
+      <DependentUpon>ccprsys.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\ccpr_ed.resX">
+      <Link>CC\ccpr_ed.resX</Link>
+      <DependentUpon>ccpr_ed.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\ccreason.resX">
+      <Link>CC\ccreason.resX</Link>
+      <DependentUpon>ccreason.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\cc_chkvoid.resX">
+      <Link>CC\cc_chkvoid.resX</Link>
+      <DependentUpon>cc_chkvoid.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\cc_ed_time.resX">
+      <Link>CC\cc_ed_time.resX</Link>
+      <DependentUpon>cc_ed_time.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\cc_ent_time.resX">
+      <Link>CC\cc_ent_time.resX</Link>
+      <DependentUpon>cc_ent_time.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\clijob.resX">
+      <Link>CC\clijob.resX</Link>
+      <DependentUpon>clijob.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\clijoblkup.resX">
+      <Link>CC\clijoblkup.resX</Link>
+      <DependentUpon>clijoblkup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\clpr_menu.resX">
+      <Link>CC\clpr_menu.resX</Link>
+      <DependentUpon>clpr_menu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\clpr_start.resX">
+      <Link>CC\clpr_start.resX</Link>
+      <DependentUpon>clpr_start.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\Dedlkup.resX">
+      <Link>CC\Dedlkup.resX</Link>
+      <DependentUpon>Dedlkup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\Deducts.resX">
+      <Link>CC\Deducts.resX</Link>
+      <DependentUpon>Deducts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\disab.resX">
+      <Link>CC\disab.resX</Link>
+      <DependentUpon>disab.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\disablkup.resX">
+      <Link>CC\disablkup.resX</Link>
+      <DependentUpon>disablkup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\Import.resx">
+      <Link>CC\Import.resx</Link>
+      <DependentUpon>Import.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\job.resX">
+      <Link>CC\job.resX</Link>
+      <DependentUpon>job.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\joblkup.resX">
+      <Link>CC\joblkup.resX</Link>
+      <DependentUpon>joblkup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\job_alloc.resX">
+      <Link>CC\job_alloc.resX</Link>
+      <DependentUpon>job_alloc.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\paycl.resX">
+      <Link>CC\paycl.resX</Link>
+      <DependentUpon>paycl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\pclass.resX">
+      <Link>CC\pclass.resX</Link>
+      <DependentUpon>pclass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\pclasslkup.resX">
+      <Link>CC\pclasslkup.resX</Link>
+      <DependentUpon>pclasslkup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\prep_je_cc.resX">
+      <Link>CC\prep_je_cc.resX</Link>
+      <DependentUpon>prep_je_cc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\Start_process.resX">
+      <Link>CC\Start_process.resX</Link>
+      <DependentUpon>Start_process.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\update_recon.resX">
+      <Link>CC\update_recon.resX</Link>
+      <DependentUpon>update_recon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\CC\Vac_acc.resX">
+      <Link>CC\Vac_acc.resX</Link>
+      <DependentUpon>Vac_acc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\..\..\Forms\GL\frmglhead1.resX">
+      <Link>Basic\frmglhead1.resX</Link>
+      <DependentUpon>frmglhead1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ATT\ContractDataEntry.resx">
+      <DependentUpon>ContractDataEntry.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\CrystalForm.resx">
+      <DependentUpon>CrystalForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Basic\ETSSplashOpen.resx">
+      <DependentUpon>ETSSplashOpen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CC\frmccyear.resX">
+      <DependentUpon>frmccyear.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CC\frmavhr.resX">
+      <DependentUpon>frmavhr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CC\ClientContract.resX">
+      <DependentUpon>ClientContract.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CC\contlkup.resX">
+      <DependentUpon>contlkup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CC\CreateCoachRel.resx">
+      <DependentUpon>CreateCoachRel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CC\Frmccvac.resX">
+      <DependentUpon>Frmccvac.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CC\MthQtrYtd.resx">
+      <DependentUpon>MthQtrYtd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CC\PayService.resx">
+      <DependentUpon>PayService.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CC\frmrate.resX">
+      <DependentUpon>frmrate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CC\ReprintChecks.resx">
+      <DependentUpon>ReprintChecks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CC\NameCC.resx">
+      <DependentUpon>NameCC.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CC\WebMaint.resx">
+      <DependentUpon>WebMaint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EE\NameEE.resX">
+      <DependentUpon>NameEE.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="app2.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <Private>False</Private>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
